@@ -1,0 +1,64 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  background: url('stuff.png') repeat;
+  height: 100%;
+}
+.bodydiv
+{
+  background-image: url("fountainofdreams-sm.jpg"), url("stretch.png");
+  background-position: bottom center, top center;
+  background-size: 100%, 100%;
+  background-repeat: no-repeat, repeat-y;
+  min-height: 100%;
+  width: 70%;
+  margin: 0 auto;
+  border-left:  3px solid #EEE;
+  border-right: 3px solid #EEE;
+  box-shadow: 0px 0px 32px #000, 0px 0px 48px #000, 0px 0px 72px #000;
+  padding: 24px 24px 480px 24px;
+}
+.textdiv {
+  background-color: #fff;
+  background-color: rgba(255,255,255,0.8);
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto 24px auto;
+  border-radius: 24px;
+  border: 3px solid #555;
+  box-shadow: 0px 0px 8px rgba(0,0,0,1);
+  text-shadow: 0 0 0.1em #FFF,
+               0 0 0.1em #FFF, 
+               0      0.05em 0.1em #FFF, 
+               0.05em 0.05em 0.1em #FFF, 
+               0.05em 0      0.1em #FFF, 
+               0 0 0.2em #FFF, 
+               0 0 0.2em #FFF, 
+               0 0 0.3em #FFF,
+               0 0 0.4em #FFF,
+               0 0 0.5em #FFF;
+  color: #345;
+}
+.textdiv p:hover {
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 12px;
+  box-shadow: 4px 4px 32px #FFF, -4px -4px 32px #FFF, 0px 0px 48px #FFF, 0px 0px 72px #FFF;
+  text-shadow: none;
+  transition-duration: 0.5s;
+  transition-property: box-shadow text-shadow;
+}
+.textdiv h1, .textdiv h2 {
+  margin-top: 0;
+}
+.textdiv p {
+  margin: 16px 0;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.625);
+  box-shadow: 0 0 12px #FFFA, 0 0 6px #FFFA,  0 0 24px #FFFA;
+  transition-duration: 0.75s;
+  transition-property: box-shadow text-shadow;
+}
+a:link    {color:#48F;}  /* unvisited link */
+a:visited {color:#000;}  /* visited link */
+a:hover   {color:#DEF;}  /* mouse over link */
+a:active  {color:#00F;}  /* selected link */
