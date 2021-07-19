@@ -6,16 +6,20 @@
   <body>
    <div class="bodydiv">
     <div class="textdiv">
-    <p>As I intended for the TLD to suggest, this is an Instant-Messaging-related personal domain.
-    I use it basically exclusively for the email address, but intend to populate it "at some point in the
-    future" with my interests.</p>
+    <p>Welcome! You have stumbled upon my personal domain.</p>
 
-    <p>Most of the stuff I do is available on <a href="https://github.com/JoshDreamland">my GitHub page</a>.
+    <p>I use this domain primarily for the email address, but have slowly been
+    populating it with my interests.</p>
 
-    <p>I think I will also write <a href="about.php">a little about me</a>.
+    <p>A lot of the stuff I do is available on <a href="https://github.com/JoshDreamland">my GitHub page</a>.
+
+    <p>I also finally made an actual "<a href="about.php">about me</a>" page,
+    because someone actually asked. I think they asked out of a sort of general
+    curiosity about how I might respond to the request, but I'll take it.
 
     <p>«Something about tacos»</p>
     </div>
+    <div style="height: calc(70vw * 1504/1920); visibility: hidden;"></div>
    </div>
   </body>
 </html>

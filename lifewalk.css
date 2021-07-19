@@ -1,0 +1,81 @@
+#Badges img {
+  width:  128px;
+  height: 128px;
+}
+#visualization {
+  position: relative;
+  transition-timing-function: ease;
+  color: white;
+}
+.visualization-noscript {
+  height: 64px;
+  margin-bottom: 1em;
+  border-radius: 16px;
+  border: 6px double lightgray;
+  background-color: rgba(255, 255, 255, .75);
+  color: black;
+  width: calc(100% - 3em);
+  margin-left: 1em;
+}
+#graphbox {
+  top: 32px; left: 32px;
+  border: 4px solid white;
+  position: absolute;
+}
+.graphbox-visible {
+  /*
+  color: rgba(255, 255, 255, 255);
+  max-width: 600px;
+  max-height: 1200px;
+  border-radius: 32px;
+  transition: width .5s, height .5s ease-in, opacity .25s;
+  */
+  opacity: 1;
+  transition: opacity .5s;
+}
+.graphbox-hidden {
+  /*
+  color: rgba(255, 255, 255, 0);
+  max-width: 12px;
+  max-height: 12px;
+  border-radius: 32px;
+  transition: color .5s, max-width .5s ease-in .25s, max-height .5s linear .25s, opacity .25s linear .5s, visibility 1s linear 1s;
+  */
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .5s, visibility 0s linear .5s;
+}
+.TLEntry {
+  color: white;
+  position: relative;
+  background-color: #444;
+  border: 4px solid white;
+  border-radius: 32px;
+  padding: 26px;
+  padding-top: 0px;
+  margin-left: 32px;
+  display: inline-block;
+  margin-top: 28px;
+  max-width: 25%;
+  vertical-align: middle;
+}
+.TLIcon {
+  position: absolute;
+  top: -36px; left: -36px;
+  width: 64px;
+  height: 64px;
+  border-radius: 36px;
+  border: 4px solid #DDD;
+  background-color: white;
+  box-shadow: -4px -4px 16px black;
+}
+.TLEntry h1 {
+  margin-left: 18px;
+  font-size: 16pt;
+  color: #C0FFEE;
+}
+.TLEntry h2 {
+  margin-left: 18px;
+  font-size: 16pt;
+}
+

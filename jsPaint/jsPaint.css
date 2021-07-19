@@ -1,0 +1,44 @@
+.jsPaint_toolbox {
+  width: 74px;
+  /*width: 20%;*/
+  box-sizing: border-box;
+  background-color: lightgray;
+  border-right: 4px outset lightgray;
+  height: 100%;
+  text-align: center;
+  float: left;
+}
+
+.jsPaint_toolbox .toolpad {
+  display: inline-block;
+  padding: 6px;
+/*  background-color: red;*/
+  text-align: justify;
+}
+.jsPaint_toolbox .toolbutton {
+  padding: 0;
+  margin: 0;
+}
+.jsPaint_toolbox .toolimage {
+  vertical-align: middle;
+}
+.jsPaint_toolbox .toolbutton .tooltext {
+  display: none;
+  visibility: hidden;
+}
+.jsPaint_toolbox .toolbutton #tooltip {
+  display: none;
+  visibility: hidden;
+}
+
+.jsPaint_canvarea {
+  background: repeating-linear-gradient(-45deg, gray, gray 2.828427125px, lightgray 2.828427125px, lightgray 5.656854249px);
+  height: 100%;
+}
+
+.jsPaint_canvas {
+  float: left;
+  border: 1px solid black;
+  width: 32px;
+  height: 32px;
+}

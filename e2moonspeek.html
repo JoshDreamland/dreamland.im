@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <title>ENGLISH 2 MOONSPAEK 2 ANGRISH Translator v0.8</title>
+  </head>
+  <body>
+    <div style="width:800px">
+      <textarea id="tf" rows="20" style="width:800px; margin:auto;">Enter text to translate here.</textarea>
+      <br/>
+      <div style="width:300px;margin:auto;">
+        <input type="button" value="english2moonspeek" onclick="st(e2m(gt()))">
+        <input type="button" value="moonspeek2angrish" onclick="st(m2e(gt()))">
+      </div>
+      <br/><br/>
+      <div style="width:700px; border:1px solid #C0C0C0; margin:auto; min-height: 320px;">
+        <textarea id="td" style="width:700px; border: 0 none; min-height: 320px;"></textarea>
+    </div>
+    <script type="text/javascript">
+     // THIS CODE IS TOO INTRICATE FOR MEER MORTALS TO COMPREHEND!
+     function gt() {
+       var tf = document.getElementById("tf");
+       return tf.value;
+     }
+     function st(str) {
+       var td = document.getElementById("td");
+       td.value = str;
+     }
+     function e2m(str) {
+       var output = "";
+       for (var i = 0; i < str.length; ++i) {
+         var ch = str.charCodeAt(i);
+         while (ch >= 10000)
+           output += (ch>10000)? "GODJIRA, " : "GODJIRA. ", ch -= 10000;
+         while (ch >= 5000)
+           output += (ch>5000)? "GODZIRRA, " : "GODZIRRA. ", ch -= 5000;
+         while (ch >= 1000)
+           output += (ch>1000)? "GODZERRA, " : "GODZERRA. ", ch -= 1000;
+         while (ch >= 100)
+           output += (ch>100)? "Godzirra, " : "Godzirra. ", ch -= 100;
+         while (ch >= 50)
+           output += (ch>50)? "Godzerra, " : "Godzerra. ", ch -= 50;
+         while (ch >= 10)
+           output += (ch>10)? "Godzera, " : "Godzera. ", ch -= 10;
+         while (ch >= 7)
+           output += (ch>7)? "GODZERA, " : "GODZERA. ", ch -= 7;
+         while (ch >= 1)
+       	   output += (ch>1)? "godzera, " : "godzera. ", --ch;
+       }
+       return output;
+     }
+     function white(x) { return /(\s|,)/.test(x); }
+     function m2e(str) {
+       var output = "";
+       for (var i = 0; i < str.length; ++i) {
+         var tch = 0;
+         while (i < str.length && str[i] != '.') {
+           while (white(str[i])) ++i;
+           if (i >= str.length || str[i] == '.') continue;
+           if (str[i] == 'G') {
+             if (str.substr(i,7) == "GODJIRA") { tch += 10000; i += 7; continue; }
+             if (str.substr(i,8) == "GODZIRRA") { tch += 5000; i += 8; continue; }
+             if (str.substr(i,8) == "GODZERRA") { tch += 1000; i += 8; continue; }
+             if (str.substr(i,8) == "Godzirra") { tch += 100; i += 8; continue; }
+             if (str.substr(i,8) == "Godzerra")	{ tch += 50; i += 8; continue;	}
+             if (str.substr(i,7) == "Godzera") { tch += 10; i += 7; continue;  }
+             if (str.substr(i,7) == "GODZERA") { tch += 7; i += 7; continue;  }
+       	   }
+       	   else if (str[i] == 'g') {
+       	     if (str.substr(i,7) == "godzera") { tch += 1; i += 7; continue;  }
+       	   }
+       	   return str + "\n" + output+"\n" + "This is not moonspeak. (" +
+                  i + "[" + tch + "]: " + str.substr(i,8) + " is not in the moonspeak alphabet)";
+         }
+         output += String.fromCharCode(tch);
+       }
+       
+       return output;
+     }
+    </script>
+  </body>
+</html>
+
